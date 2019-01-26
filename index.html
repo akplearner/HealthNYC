@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_7effc491b579412fa9216b57e6406625 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_7effc491b579412fa9216b57e6406625" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_7effc491b579412fa9216b57e6406625 = L.map(
+        'map_7effc491b579412fa9216b57e6406625', {
+        center: [40.8592667, -73.8984694],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_f6354b65e6e84df8b6c4f13457a800e5 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_7effc491b579412fa9216b57e6406625);
+    
+        var marker_cd29eff1d08147d7bb32b203dd108602 = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_36e78c54f8c84adca305583eed8372a8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0a1ffe07c8284969bb697a2dee8c6c42 = $(`<div id="html_0a1ffe07c8284969bb697a2dee8c6c42" style="width: 100.0%; height: 100.0%;"><i>Mt. Hood Meadows</i></div>`)[0];
+                popup_36e78c54f8c84adca305583eed8372a8.setContent(html_0a1ffe07c8284969bb697a2dee8c6c42);
+            
+
+            marker_cd29eff1d08147d7bb32b203dd108602.bindPopup(popup_36e78c54f8c84adca305583eed8372a8)
+            ;
+
+            
+        
+    
+        marker_cd29eff1d08147d7bb32b203dd108602.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e18adad29fa14989a66ea81c3f17e2b4 = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_c88ffb629ed1457aac33f0183af2e752 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b0e42a53bbaf4e79aebbb90a590f8922 = $(`<div id="html_b0e42a53bbaf4e79aebbb90a590f8922" style="width: 100.0%; height: 100.0%;"><b>Timberline Lodge</b></div>`)[0];
+                popup_c88ffb629ed1457aac33f0183af2e752.setContent(html_b0e42a53bbaf4e79aebbb90a590f8922);
+            
+
+            marker_e18adad29fa14989a66ea81c3f17e2b4.bindPopup(popup_c88ffb629ed1457aac33f0183af2e752)
+            ;
+
+            
+        
+    
+        marker_e18adad29fa14989a66ea81c3f17e2b4.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_019978188f404b65a4b780c7c7987e65 = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_53071ff2b9a0427ea068b31536eb0c73 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_67fdd0b4585444ffb21ddad5777fbf3d = $(`<div id="html_67fdd0b4585444ffb21ddad5777fbf3d" style="width: 100.0%; height: 100.0%;"><i>Mt. Hood Meadows</i></div>`)[0];
+                popup_53071ff2b9a0427ea068b31536eb0c73.setContent(html_67fdd0b4585444ffb21ddad5777fbf3d);
+            
+
+            marker_019978188f404b65a4b780c7c7987e65.bindPopup(popup_53071ff2b9a0427ea068b31536eb0c73)
+            ;
+
+            
+        
+    
+        marker_019978188f404b65a4b780c7c7987e65.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fb464b53d84a4123b9d833095b29c595 = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_61f441f31bb6496e87c7b85ec5a8a2c6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_275036d0d6294320a47fd7adf4445426 = $(`<div id="html_275036d0d6294320a47fd7adf4445426" style="width: 100.0%; height: 100.0%;">Fordham, The Bronx, Bronx County, NYC, New York, 10457-2919, USA</div>`)[0];
+                popup_61f441f31bb6496e87c7b85ec5a8a2c6.setContent(html_275036d0d6294320a47fd7adf4445426);
+            
+
+            marker_fb464b53d84a4123b9d833095b29c595.bindPopup(popup_61f441f31bb6496e87c7b85ec5a8a2c6)
+            ;
+
+            
+        
+    
+        marker_fb464b53d84a4123b9d833095b29c595.bindTooltip(
+            `<div>`
+            + `Survey#!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0c1259f3e1074ee39f569d4c9be709c3 = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_c680599af3a943f093be1a6b69f3e78a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e9fa0d4845142ca82b1de23ebbe9f52 = $(`<div id="html_4e9fa0d4845142ca82b1de23ebbe9f52" style="width: 100.0%; height: 100.0%;">Fordham, The Bronx, Bronx County, NYC, New York, 10457-2919, USA</div>`)[0];
+                popup_c680599af3a943f093be1a6b69f3e78a.setContent(html_4e9fa0d4845142ca82b1de23ebbe9f52);
+            
+
+            marker_0c1259f3e1074ee39f569d4c9be709c3.bindPopup(popup_c680599af3a943f093be1a6b69f3e78a)
+            ;
+
+            
+        
+    
+        marker_0c1259f3e1074ee39f569d4c9be709c3.bindTooltip(
+            `<div>`
+            + `Survey#!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_cd3f1c5469994dd99856e3669df08d2d = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_91f0f3fc838048d2859c6eaf222474c6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c4eb0e9eda14944ad99ada7385fcec3 = $(`<div id="html_0c4eb0e9eda14944ad99ada7385fcec3" style="width: 100.0%; height: 100.0%;">Fordham, The Bronx, Bronx County, NYC, New York, 10457-2919, USA</div>`)[0];
+                popup_91f0f3fc838048d2859c6eaf222474c6.setContent(html_0c4eb0e9eda14944ad99ada7385fcec3);
+            
+
+            marker_cd3f1c5469994dd99856e3669df08d2d.bindPopup(popup_91f0f3fc838048d2859c6eaf222474c6)
+            ;
+
+            
+        
+    
+        marker_cd3f1c5469994dd99856e3669df08d2d.bindTooltip(
+            `<div>`
+            + `Survey#!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0bd38c79abf64bc58879dbc495f26c3c = L.marker(
+            [40.8592667, -73.8984694],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_7effc491b579412fa9216b57e6406625);
+        
+    
+            var popup_c30d6463b8444dd7bd8bec5f1b60506d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7288167ffc6f4b54b485bb765dec98b3 = $(`<div id="html_7288167ffc6f4b54b485bb765dec98b3" style="width: 100.0%; height: 100.0%;">Fordham, The Bronx, Bronx County, NYC, New York, 10457-2919, USA</div>`)[0];
+                popup_c30d6463b8444dd7bd8bec5f1b60506d.setContent(html_7288167ffc6f4b54b485bb765dec98b3);
+            
+
+            marker_0bd38c79abf64bc58879dbc495f26c3c.bindPopup(popup_c30d6463b8444dd7bd8bec5f1b60506d)
+            ;
+
+            
+        
+    
+        marker_0bd38c79abf64bc58879dbc495f26c3c.bindTooltip(
+            `<div>`
+            + `Survey#!` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
